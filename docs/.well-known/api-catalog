@@ -1,0 +1,28 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://nepdate.rajuprasai.com.np/",
+      "service-desc": [
+        {
+          "href": "https://nepdate.rajuprasai.com.np/.well-known/mcp/server-card.json",
+          "type": "application/json",
+          "title": "NepDate Service Description"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://nepdate.rajuprasai.com.np/docs.html.md",
+          "type": "text/markdown",
+          "title": "NepDate API Reference (Markdown)"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://nepdate.rajuprasai.com.np/.well-known/agent-skills/index.json",
+          "type": "application/json",
+          "title": "Agent Skills Discovery Index"
+        }
+      ]
+    }
+  ]
+}

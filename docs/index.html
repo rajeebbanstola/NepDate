@@ -2,43 +2,200 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <script>!function(){var p=null;try{p=localStorage.getItem('nepdate-theme')}catch(e){}if(p!=='light'&&p!=='dark')p=null;var t=p||(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('data-theme-pref',p||'system');document.documentElement.style.backgroundColor=t==='dark'?'#0a0e1a':'#fff';document.documentElement.classList.add('no-transition');requestAnimationFrame(function(){requestAnimationFrame(function(){document.documentElement.classList.remove('no-transition')})})}()</script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#ea580c" />
-  <title>NepDate - The Fastest Bikram Sambat Library for .NET</title>
-  <meta name="description" content="High performance, zero-allocation Bikram Sambat (B.S.) date library for .NET. Conversion, smart parsing, fiscal year, calendar metadata, and more." />
-  <link rel="canonical" href="https://rajuprasai.github.io/NepDate/" />
+  <meta name="theme-color" content="#dc3f10" />
+  <title>NepDate - Bikram Sambat .NET Library for Nepali Date Conversion</title>
+  <meta name="description" content="Zero-dependency .NET library for Bikram Sambat (BS) to Gregorian date conversion, smart parsing, fiscal year, calendar metadata, and bulk operations. 4.55 ns/op, zero allocations." />
+  <link rel="canonical" href="https://nepdate.rajuprasai.com.np/" />
   <link rel="icon" href="assets/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
   <link rel="apple-touch-icon" href="assets/logo.png" />
-
-  <!-- Open Graph -->
+  <meta name="color-scheme" content="light dark" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Raju Prasai" />
+  <meta name="application-name" content="NepDate" />
+  <meta name="geo.region" content="NP" />
+  <meta name="geo.placename" content="Nepal" />
+  <link rel="preload" as="font" href="assets/fonts/JetBrainsMono-Variable.woff2" type="font/woff2" crossorigin />
+  <link rel="api-catalog" href="/.well-known/api-catalog" type="application/linkset+json" />
+  <link rel="service-desc" href="/.well-known/mcp/server-card.json" type="application/json" title="NepDate service description" />
+  <link rel="service-doc" href="/docs.html.md" type="text/markdown" title="NepDate API Reference (Markdown)" />
+  <link rel="describedby" href="/.well-known/agent-skills/index.json" type="application/json" title="Agent Skills Discovery Index" />
+  <link rel="alternate" type="text/markdown" href="/index.html.md" title="Markdown version" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="NepDate - The Fastest Bikram Sambat Library for .NET" />
-  <meta property="og:description" content="Nanosecond Nepali date conversions, smart parsing, fiscal year operations, and rich calendar metadata for any .NET app." />
-  <meta property="og:image" content="https://user-images.githubusercontent.com/37014558/231635618-bf6599e3-554e-4b02-93df-019e7b8aecc3.png" />
-  <meta property="og:url" content="https://rajuprasai.github.io/NepDate/" />
+  <meta property="og:site_name" content="NepDate" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ne_NP" />
+  <meta property="og:title" content="NepDate - Bikram Sambat .NET Library for Nepali Date Conversion" />
+  <meta property="og:description" content="Zero-dependency .NET library for Bikram Sambat date conversion, smart parsing, fiscal year helpers, calendar metadata, and bulk operations. 4.55 ns/op, zero allocations." />
+  <meta property="og:image" content="https://nepdate.rajuprasai.com.np/assets/full-logo.png" />
+  <meta property="og:image:alt" content="NepDate library logo" />
+  <meta property="og:url" content="https://nepdate.rajuprasai.com.np/" />
   <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Structured Data -->
+  <meta name="twitter:site" content="@CrossLegCoder" />
+  <meta name="twitter:creator" content="@CrossLegCoder" />
+  <meta name="twitter:title" content="NepDate - Bikram Sambat .NET Library for Nepali Date Conversion" />
+  <meta name="twitter:description" content="Zero-dependency .NET library for Bikram Sambat date conversion, smart parsing, fiscal year, calendar metadata, and bulk operations." />
+  <meta name="twitter:image" content="https://nepdate.rajuprasai.com.np/assets/full-logo.png" />
+  <meta name="twitter:image:alt" content="NepDate library logo" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "NepDate",
-    "operatingSystem": ".NET Standard 2.0, .NET 5+, .NET Framework 4.6.1+",
-    "applicationCategory": "DeveloperApplication",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "author": { "@type": "Person", "name": "Raju Prasai" },
-    "url": "https://rajuprasai.github.io/NepDate/",
-    "license": "https://opensource.org/licenses/MIT"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://nepdate.rajuprasai.com.np/#website",
+        "name": "NepDate",
+        "url": "https://nepdate.rajuprasai.com.np/",
+        "description": "Documentation site for the NepDate Bikram Sambat .NET library."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://nepdate.rajuprasai.com.np/#library",
+        "name": "NepDate",
+        "alternateName": ["NepDate Library", "Bikram Sambat .NET Library", "Nepali Date Library"],
+        "description": "Zero-dependency .NET library for Bikram Sambat (BS) date conversion, smart parsing with 100+ month-name spellings, fiscal year helpers, calendar metadata (tithi, holidays, events) for 2001-2089 BS, date range operations, serialization, and bulk conversion. 4.55 ns/op BS to AD conversion, zero allocations.",
+        "url": "https://nepdate.rajuprasai.com.np/",
+        "softwareVersion": "2.0.7",
+        "datePublished": "2023-04-22",
+        "dateModified": "2026-06-01",
+        "applicationCategory": "DeveloperApplication",
+        "applicationSubCategory": "Date and Time Library",
+        "operatingSystem": ".NET Standard 2.0, .NET 5, .NET 6, .NET 7, .NET 8, .NET 9, .NET 10, .NET Framework 4.6.1+, .NET Core 2.0+, Mono, Xamarin, MAUI, Unity",
+        "inLanguage": ["en", "ne"],
+        "isAccessibleForFree": true,
+        "isFamilyFriendly": true,
+        "downloadUrl": "https://www.nuget.org/packages/NepDate/",
+        "installUrl": "https://www.nuget.org/packages/NepDate/",
+        "releaseNotes": "https://nepdate.rajuprasai.com.np/changelog.html",
+        "discussionUrl": "https://github.com/RajuPrasai/NepDate/issues",
+        "keywords": "bikram sambat, nepali date, nepali calendar, BS to AD, AD to BS, date conversion, .NET library, NuGet, C#, fiscal year nepal, tithi, nepal public holidays",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "@id": "https://rajuprasai.com.np/#person",
+          "name": "Raju Prasai",
+          "url": "https://rajuprasai.com.np/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "featureList": "BS to AD date conversion, AD to BS date conversion, smart date parsing with 100+ spellings, custom format strings, Nepali Unicode output, fiscal year operations, fiscal quarter detection, NepaliDateRange with set operations, calendar metadata (tithi, public holidays, events), bulk conversion with auto-parallelization, System.Text.Json serialization, Newtonsoft.Json serialization, XML serialization, TypeConverter for ASP.NET model binding, IFormattable, ISpanFormattable, IParsable, IComparable, IEquatable",
+        "softwareRequirements": ".NET Standard 2.0 or higher",
+        "screenshot": "https://nepdate.rajuprasai.com.np/assets/full-logo.png",
+        "mainEntityOfPage": "https://nepdate.rajuprasai.com.np/"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://nepdate.rajuprasai.com.np/#source",
+        "name": "NepDate Source Code",
+        "codeRepository": "https://github.com/RajuPrasai/NepDate",
+        "programmingLanguage": "C#",
+        "runtimePlatform": ".NET Standard 2.0, .NET 8",
+        "license": "https://opensource.org/licenses/MIT",
+        "version": "2.0.7",
+        "author": {
+          "@type": "Person",
+          "@id": "https://rajuprasai.com.np/#person",
+          "name": "Raju Prasai",
+          "url": "https://rajuprasai.com.np/"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://nepdate.rajuprasai.com.np/#webpage",
+        "url": "https://nepdate.rajuprasai.com.np/",
+        "name": "NepDate - Bikram Sambat .NET Library for Nepali Date Conversion",
+        "description": "Zero-dependency .NET library for Bikram Sambat (BS) date conversion, smart parsing, fiscal year, calendar metadata, and bulk operations. 4.55 ns/op, zero allocations.",
+        "isPartOf": { "@id": "https://nepdate.rajuprasai.com.np/#website" },
+        "about": { "@id": "https://nepdate.rajuprasai.com.np/#library" },
+        "datePublished": "2023-04-22",
+        "dateModified": "2026-06-01",
+        "inLanguage": "en",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "NepDate", "item": "https://nepdate.rajuprasai.com.np/" }
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nepdate.rajuprasai.com.np/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What .NET versions does NepDate support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NepDate targets .NET Standard 2.0, which means it works with .NET Framework 4.6.1+, .NET Core 2.0+, .NET 5/6/7/8/9, Xamarin, Unity, and MAUI. It also ships a net8.0 target for newer API features like IParsable and ISpanFormattable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the supported date range?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NepDate supports Bikram Sambat dates from 1901/01/01 BS (approximately 1844-04-13 AD) to the last day of 2199/12 BS (approximately 2143-04-12 AD). Calendar metadata (Tithi, holidays, events) is available for 2001 through 2089 BS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does NepDate have any external dependencies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. NepDate has zero external runtime dependencies. Newtonsoft.Json and System.Text.Json references are internalized using PrivateAssets=all, so they never surface in your dependency graph."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is NepDate thread-safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. NepaliDate is a readonly struct, making it inherently immutable and safe for concurrent access. BulkConvert operations use thread-safe parallel processing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does NepDate handle invalid dates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Constructors and Parse throw InvalidNepaliDateFormatException or ArgumentOutOfRangeException for invalid input. Use TryParse for non-throwing validation. Each month's day count is enforced per year (29 to 32 days depending on month and year)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use NepDate with ASP.NET model binding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. NepaliDate has a registered TypeConverter that enables automatic model binding in ASP.NET MVC/Web API, WPF, and WinForms property grids. It converts to/from string, int (YYYYMMDD), and DateTime."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is calendar data (Tithi, holidays) sourced?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Calendar data is compiled from authoritative Bikram Sambat calendar references and cross-verified for accuracy, covering 2001 through 2089 BS. The data is compiled into the library at build time. Properties return empty/default values for dates outside this range without throwing exceptions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the advantage of the struct design?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NepaliDate is a readonly partial struct, which means instances live on the stack rather than the heap. This eliminates garbage collection pressure and makes it extremely efficient for high-throughput scenarios like bulk date processing, large LINQ pipelines, and server-side batch jobs."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -46,17 +203,6 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-M68P99TD');</script>
   <!-- End Google Tag Manager -->
-
-  <!-- Prevent theme flash -->
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('nepdate-theme');
-        if (!t) t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
-    })();
-  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7T6NBRE9KT"></script>
   <script>
@@ -128,7 +274,7 @@
               <img class="hero-badge" src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License" />
             </div>
             <h1>
-              Bikram Sambat for <span class="grad">.NET</span>, done right.
+              NepDate - Bikram Sambat for <span class="grad">.NET</span>, done right.
             </h1>
             <p class="lede">
               NepDate is a zero-dependency, stack-allocated <code>struct</code> that brings nanosecond
@@ -547,14 +693,22 @@
             <li><a href="https://github.com/RajuPrasai/NepDate/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></li>
           </ul>
         </div>
+        <div class="footer-col">
+          <h4>Related</h4>
+          <ul>
+            <li><a href="https://nepdatewidget.rajuprasai.com.np/" target="_blank" rel="noopener">NepDate Widget</a></li>
+            <li><a href="https://rajuprasai.com.np/" target="_blank" rel="noopener">Author's Portfolio</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom">
         <div>© 2023–2026 NepDate · MIT License</div>
-        <div>Made with care for the Nepali developer community.</div>
+        <div><a href="privacy.html">Privacy Policy</a> · Made with care for the Nepali developer community.</div>
       </div>
     </div>
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script src="js/share-widget.js" defer></script>
 </body>
 </html>

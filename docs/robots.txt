@@ -1,0 +1,105 @@
+User-agent: *
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
+Allow: /
+
+# AI search crawlers - explicitly allowed for AI-grounded answers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Microsoft Copilot (uses Bing index)
+User-agent: bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Meta AI
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# Common Crawl - foundation dataset used by most LLM training pipelines
+User-agent: CCBot
+Allow: /
+
+# Google Vertex AI / Gemini grounding
+User-agent: Google-CloudVertexBot
+Allow: /
+
+# Alternate Anthropic identifier
+User-agent: anthropic-ai
+Allow: /
+
+# Allen Institute for AI (academic LLM training)
+User-agent: AI2Bot
+Allow: /
+
+# Diffbot - knowledge graph used by several AI systems
+User-agent: Diffbot
+Allow: /
+
+# iAsk AI
+User-agent: iaskspider
+Allow: /
+
+# Timpi knowledge graph
+User-agent: Timpibot
+Allow: /
+
+# Friendly Crawler (open AI training data)
+User-agent: FriendlyCrawler
+Allow: /
+
+Sitemap: https://nepdate.rajuprasai.com.np/sitemap.xml
+
+# AI agent discovery
+# llms.txt: https://nepdate.rajuprasai.com.np/llms.txt
+# llms-full.txt: https://nepdate.rajuprasai.com.np/llms-full.txt
+# Agent skills: https://nepdate.rajuprasai.com.np/.well-known/agent-skills/index.json

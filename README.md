@@ -17,6 +17,8 @@
 
 NepDate is a high performance, memory efficient `struct` targeting `.NET Standard 2.0` that provides complete Bikram Sambat (B.S.) calendar support for .NET applications. It handles conversion, arithmetic, formatting, smart parsing, fiscal year operations, and calendar metadata in a single lightweight package with zero external dependencies.
 
+**Full documentation, API reference, benchmarks, and changelog:** https://nepdate.rajuprasai.com.np/
+
 ## 📋 Table of Contents
 
 | Section | Description |

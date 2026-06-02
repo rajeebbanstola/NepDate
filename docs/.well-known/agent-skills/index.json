@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "nepdate-library",
+      "type": "skill-md",
+      "description": "Teaches agents the NepDate .NET library API for Bikram Sambat date conversion, parsing, fiscal year operations, date ranges, calendar metadata, serialization, and bulk conversion. Covers all public types, methods, properties, and enums.",
+      "url": "https://nepdate.rajuprasai.com.np/.well-known/agent-skills/SKILL.md",
+      "digest": "sha256:cb28829871d16107acf620a7e277234115d14f5f2ad736a8cad5fd3b60316af5"
+    }
+  ]
+}

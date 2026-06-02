@@ -1,0 +1,58 @@
+{
+  "serverInfo": {
+    "name": "NepDate",
+    "version": "2.0.7"
+  },
+  "transport": {
+    "type": "static-site",
+    "endpoint": "https://nepdate.rajuprasai.com.np/"
+  },
+  "capabilities": {
+    "resources": true,
+    "prompts": false,
+    "tools": false
+  },
+  "description": "Documentation site for NepDate, a zero-dependency .NET library for Bikram Sambat (BS) date conversion, smart parsing with 100+ month-name spellings, fiscal year operations, calendar metadata (tithi, public holidays, festivals for 2001-2089 BS), NepaliDateRange with set operations, bulk conversion, and serialization. MIT licensed. NuGet: https://www.nuget.org/packages/NepDate/",
+  "resources": [
+    {
+      "uri": "https://nepdate.rajuprasai.com.np/",
+      "name": "Homepage",
+      "description": "Library overview, performance benchmarks (4.55 ns/op BS-to-AD, zero allocations), installation, quick start, feature highlights, FAQ"
+    },
+    {
+      "uri": "https://nepdate.rajuprasai.com.np/docs.html",
+      "name": "API Reference",
+      "description": "Complete API reference for NepDate v2.0.7. Every public method, property, enum, and exception documented with C# signatures and working code examples."
+    },
+    {
+      "uri": "https://nepdate.rajuprasai.com.np/changelog.html",
+      "name": "Changelog",
+      "description": "Version history and release notes for all NepDate releases from v1.x to v2.0.7."
+    },
+    {
+      "uri": "https://nepdate.rajuprasai.com.np/docs.html.md",
+      "name": "API Reference (Markdown)",
+      "description": "Full API reference in markdown format optimized for AI agent consumption."
+    },
+    {
+      "uri": "https://nepdate.rajuprasai.com.np/llms-full.txt",
+      "name": "Full Documentation (LLM)",
+      "description": "Complete library documentation in plain text optimized for LLM context windows."
+    },
+    {
+      "uri": "https://nepdate.rajuprasai.com.np/.well-known/agent-skills/SKILL.md",
+      "name": "Agent Skill Document",
+      "description": "Structured skill document teaching agents the NepDate library API."
+    },
+    {
+      "uri": "https://www.nuget.org/packages/NepDate/",
+      "name": "NuGet Package",
+      "description": "NepDate NuGet package page with download counts and package metadata."
+    },
+    {
+      "uri": "https://github.com/RajuPrasai/NepDate",
+      "name": "GitHub Repository",
+      "description": "NepDate source code, issues, and release history on GitHub."
+    }
+  ]
+}
