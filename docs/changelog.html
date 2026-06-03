@@ -85,7 +85,8 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -155,7 +156,7 @@
         <div class="changelog-wrap">
           <div style="margin-bottom: 32px;">
             <div class="section-eyebrow">Release History</div>
-            <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 12px;">Changelog</h1>
+            <h1 style="font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 12px;">NepDate Changelog - Bikram Sambat .NET Library Version History</h1>
             <p class="sub" style="color: var(--text-muted); font-size: 1.05rem;">
               All notable changes to NepDate are documented here. Versions follow <a href="https://semver.org" target="_blank" rel="noopener">semantic versioning</a>.
             </p>
