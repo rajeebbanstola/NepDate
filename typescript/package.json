@@ -1,0 +1,41 @@
+{
+  "name": "nep-date",
+  "version": "1.0.0",
+  "description": "Nepali Date (Bikram Sambat) library with date-fns compatible API. Port of the .NET NepDate library.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/*.mjs",
+      "require": "./dist/*.js",
+      "types": "./dist/*.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nepali",
+    "date",
+    "bikram-sambat",
+    "calendar",
+    "nepal",
+    "date-fns",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^1.0.0"
+  }
+}
